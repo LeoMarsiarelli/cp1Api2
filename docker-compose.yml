@@ -11,7 +11,7 @@ services:
       MYSQL_USER: cp1user
       MYSQL_PASSWORD: cp1pass
     ports:
-      - "3306:3306"
+      - "3307:3306" 
     volumes:
       - cp1api2_mysql_data:/var/lib/mysql
 

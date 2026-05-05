@@ -55,7 +55,7 @@ docker run --name cp1api2-mysql \
   -e MYSQL_DATABASE=cp1api2 \
   -e MYSQL_USER=cp1user \
   -e MYSQL_PASSWORD=cp1pass \
-  -p 3306:3306 \
+  -p 3307:3306 \
   -d mysql:8.0
 ```
 
