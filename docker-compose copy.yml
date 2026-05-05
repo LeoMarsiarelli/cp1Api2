@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: cp1api2-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cp1api2
+      MYSQL_USER: cp1user
+      MYSQL_PASSWORD: cp1pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - cp1api2_mysql_data:/var/lib/mysql
+
+volumes:
+  cp1api2_mysql_data:
